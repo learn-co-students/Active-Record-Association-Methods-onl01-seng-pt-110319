@@ -3,6 +3,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
 
   def get_genre_name
+    # self.songs.first
   end
 
   def drake_made_this
@@ -11,4 +12,5 @@ class Song < ActiveRecord::Base
     # Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*
 
   end
+
 end
